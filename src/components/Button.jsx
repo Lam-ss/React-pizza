@@ -12,11 +12,11 @@ import classnames from 'classnames'
 
 // }
 
-function Button(props) {
+function Button({ onClick, className, outline, children }) {
     return (
-        <button className={classnames('button', props.className, {
-            'button--outline': props.outline,
-        })}>{props.children}</button>
+        <button className={classnames('button', className, {
+            'button--outline': outline,
+        })}>{children}</button>
     )
 }
 
