@@ -5,16 +5,14 @@ import { Route } from 'react-router';
 import axios from 'axios';
 import React, { Component, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchPizzas } from './redux/actions/pizzas';
+
 
 
 function App() {
   const dispatch = useDispatch()
   
 
-  React.useEffect(() => {
-    dispatch(fetchPizzas())
-  }, [])
+  
 
   return (
     <div className="wrapper">

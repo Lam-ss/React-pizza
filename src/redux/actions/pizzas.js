@@ -8,6 +8,7 @@ export const fetchPizzas = () => (dispatch) => {
     });
 }
 
+// export const setLoaded = 
 
 
 
